@@ -53,7 +53,7 @@ export class AppComponent implements AfterViewInit {
     if (this.targetDate.getHours() - this.date.getHours() < 0) {
       this.hours.nativeElement.innerText = this.targetDate.getHours() - this.date.getHours() + 23;  
     } else {
-      this.hours.nativeElement.innerText = this.targetDate.getHours() - this.date.getHours();  
+      this.hours.nativeElement.innerText = this.targetDate.getHours() - this.date.getHours() - 1;  
     }
     if (this.targetDate.getMinutes() - this.date.getMinutes() < 0) {
       this.minutes.nativeElement.innerText = this.targetDate.getMinutes() - this.date.getMinutes() + 59;  
